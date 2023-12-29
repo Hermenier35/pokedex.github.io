@@ -1,0 +1,40 @@
+
+<div class="view" *ngIf="pokemons">
+    <p-carousel [page]="page" [value]="pokemons" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" 
+    [showIndicators]="false">
+        <ng-template let-pokemon pTemplate="item"> 
+            <div class="card">
+                <div class = "typeImg">
+                    <img *ngFor="let type of pokemon.apiTypes" [src]="type.image" [alt]="type.name" /> 
+                </div>
+                <h3>{{pokemon.name}}</h3>
+                <div class="pokeImage">
+                    <img src="{{ pokemon.image }}" [alt]="pokemon.name" class="w-6 shadow-2" />
+                </div>
+                <div>
+                    <p-tag *ngFor="let type of pokemon.apiTypes" [value]="type.name" [severity]="getSeverity(pokemon.id)"></p-tag>
+                </div>
+                <h4>Stats</h4>
+                <div class = "stats">
+                    <div class = "stat1">
+                        <p>HP:</p>
+                        <p-progressBar unit="" [value]="pokemon.stats.HP"></p-progressBar>
+                        <p>attack:</p>
+                        <p-progressBar unit="" [value]="pokemon.stats.attack"></p-progressBar>
+                        <p>defence:</p>
+                        <p-progressBar unit="" [value]="pokemon.stats.defense"></p-progressBar>
+                    </div>
+                    <div class = "stat2"> 
+                        <p>special_attack:</p>
+                        <p-progressBar unit="" [value]="pokemon.stats.special_attack"></p-progressBar>
+                        <p>special_defence:</p>
+                        <p-progressBar unit="" [value]="pokemon.stats.special_defense"></p-progressBar>
+                        <p>speed:</p>
+                        <p-progressBar unit="" [value]="pokemon.stats.speed"></p-progressBar>
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

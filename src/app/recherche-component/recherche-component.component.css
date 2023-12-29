@@ -1,25 +1,17 @@
-/* Ajoutez le chemin relatif vers votre fichier TTF */
 @font-face {
     font-family: 'Solid';
     src: url('src/assets/fonts/Solid.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
-  
-  /* Utilisez votre police dans votre application Angular */
-  h1 {
+
+  p{
     font-family: 'Solid', sans-serif;
     color: #ffcc03;
-    font-size: 80px;
+    font-size: 18px;
     text-shadow: 
     -2px -2px 0 #0755AA,
     2px -2px 0 #0755AA,
     -2px 2px 0 #0755AA,
     2px 2px 0 #0755AA;
   }
-
-  .root {
-    width: 100%;
-    height: 100%;
-  }
-  
