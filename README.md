@@ -8,6 +8,9 @@ Projet de 1ère année de Master. <br />
 Utilise une API pour récupérer des informations concernants des pokemons. <br />
 Affiche les informations du pokemon rechercher.
 
+## Competences
+TypeScript, Angular, HTML, CSS
+
 ## Divers
 
 divers informations.
