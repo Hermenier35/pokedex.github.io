@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-<p>Projet Angular utilisant une API pour récupérer<br> des informations concernants des pokemons.<p>
+Projet Angular utilisant une API pour récupérer<br /> des informations concernants des pokemons.
 
 ## Divers
 
